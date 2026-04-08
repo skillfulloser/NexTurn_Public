@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — NexTurn</title>
+  <meta name="description" content="NexTurn Privacy Policy - How we collect, use, and protect your information.">
+  <meta name="theme-color" content="#0F1115">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect x='2' y='2' width='28' height='28' rx='6' fill='%23C8C8C8' opacity='0.5'/><circle cx='16' cy='14' r='8' fill='white' stroke='%232E8B57' stroke-width='2.5'/></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #0F1115;
+      color: #F1F5F9;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      min-height: 100vh;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* Starfield */
+    .stars {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+    }
+
+    .stars::before,
+    .stars::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        radial-gradient(1px 1px at 10% 20%, rgba(255,255,255,0.6), transparent),
+        radial-gradient(1px 1px at 25% 65%, rgba(255,255,255,0.4), transparent),
+        radial-gradient(1.5px 1.5px at 40% 10%, rgba(255,255,255,0.7), transparent),
+        radial-gradient(1px 1px at 55% 80%, rgba(255,255,255,0.3), transparent),
+        radial-gradient(1px 1px at 70% 35%, rgba(255,255,255,0.5), transparent),
+        radial-gradient(1.5px 1.5px at 85% 55%, rgba(255,255,255,0.6), transparent),
+        radial-gradient(1px 1px at 15% 90%, rgba(255,255,255,0.4), transparent),
+        radial-gradient(1px 1px at 90% 15%, rgba(255,255,255,0.5), transparent),
+        radial-gradient(1px 1px at 50% 45%, rgba(255,255,255,0.3), transparent),
+        radial-gradient(1.5px 1.5px at 35% 75%, rgba(255,255,255,0.5), transparent);
+    }
+
+    .stars::after {
+      background-image:
+        radial-gradient(1px 1px at 5% 50%, rgba(255,255,255,0.5), transparent),
+        radial-gradient(1px 1px at 18% 38%, rgba(255,255,255,0.3), transparent),
+        radial-gradient(1.5px 1.5px at 32% 88%, rgba(255,255,255,0.6), transparent),
+        radial-gradient(1px 1px at 48% 22%, rgba(255,255,255,0.4), transparent),
+        radial-gradient(1px 1px at 62% 60%, rgba(255,255,255,0.5), transparent),
+        radial-gradient(1.5px 1.5px at 78% 85%, rgba(255,255,255,0.4), transparent),
+        radial-gradient(1px 1px at 88% 42%, rgba(255,255,255,0.6), transparent),
+        radial-gradient(1px 1px at 95% 72%, rgba(255,255,255,0.3), transparent),
+        radial-gradient(1px 1px at 42% 5%, rgba(255,255,255,0.4), transparent),
+        radial-gradient(1.5px 1.5px at 72% 12%, rgba(255,255,255,0.5), transparent);
+      animation: twinkle 8s ease-in-out infinite alternate;
+    }
+
+    @keyframes twinkle {
+      0% { opacity: 0.4; }
+      100% { opacity: 1; }
+    }
+
+    /* Layout */
+    .page {
+      position: relative;
+      z-index: 1;
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 60px 24px 80px;
+    }
+
+    /* Header */
+    .page-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .page-header a {
+      color: #01796F;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .page-header a:hover { text-decoration: underline; }
+
+    h1 {
+      font-family: 'Lalezar', sans-serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      color: #01796F;
+      margin-top: 16px;
+    }
+
+    .last-updated {
+      font-size: 0.85rem;
+      color: #64748B;
+      margin-top: 8px;
+    }
+
+    /* Content */
+    .section {
+      margin-bottom: 32px;
+    }
+
+    .section h2 {
+      font-weight: 600;
+      font-size: 1.05rem;
+      color: #F1F5F9;
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      font-size: 0.9rem;
+      line-height: 1.7;
+      color: #94A3B8;
+      margin-bottom: 10px;
+    }
+
+    .section h3 {
+      font-weight: 500;
+      font-size: 0.9rem;
+      color: #F1F5F9;
+      margin-top: 12px;
+      margin-bottom: 6px;
+    }
+
+    .section ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-bottom: 10px;
+    }
+
+    .section ul li {
+      font-size: 0.9rem;
+      color: #94A3B8;
+      line-height: 1.6;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .section ul li::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 3px;
+      background: #01796F;
+      flex-shrink: 0;
+      margin-top: 8px;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 32px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .footer a {
+      color: #01796F;
+      text-decoration: none;
+      font-size: 0.85rem;
+    }
+
+    .footer a:hover { text-decoration: underline; }
+
+    .footer p {
+      color: #475569;
+      font-size: 0.8rem;
+      margin-top: 8px;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .page { padding: 40px 16px 60px; }
+      h1 { font-size: 1.8rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="stars"></div>
+
+  <div class="page">
+    <div class="page-header">
+      <a href="/">&larr; Back to NexTurn</a>
+      <h1>Privacy Policy</h1>
+      <p class="last-updated">Last Updated: March 20, 2026</p>
+    </div>
+
+    <div class="section">
+      <h2>Introduction</h2>
+      <p>Drop the Dice LLC ("we", "us", "our") operates the NexTurn mobile application and NexTurn hardware devices. This Privacy Policy explains how we collect, use, and protect your information when you use our services.</p>
+      <p>By using NexTurn, you agree to the collection and use of information as described in this policy. If you do not agree, please do not use our services.</p>
+    </div>
+
+    <div class="section">
+      <h2>Information We Collect</h2>
+      <p>We collect the following types of information:</p>
+
+      <h3>Account Information</h3>
+      <ul>
+        <li>Email address (for account creation and authentication)</li>
+        <li>Display name / username</li>
+        <li>Authentication credentials (managed securely through AWS Cognito)</li>
+      </ul>
+
+      <h3>Game Session Data</h3>
+      <ul>
+        <li>Game names, player names, turn times, and session statistics</li>
+        <li>Tournament configurations and results</li>
+        <li>Color palettes and game preferences</li>
+      </ul>
+
+      <h3>Device Information</h3>
+      <ul>
+        <li>Push notification tokens (for friend and tournament notifications)</li>
+        <li>Device identifiers (for NexTurn hardware pairing only)</li>
+      </ul>
+
+      <h3>Tournament Data</h3>
+      <ul>
+        <li>If a tournament organizer uploads a CSV of participants, that file may contain names, email addresses, and seeding information. This data is stored solely for tournament management purposes.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>How We Use Your Information</h2>
+      <p>We use your information to:</p>
+      <ul>
+        <li>Provide and maintain the NexTurn app and device functionality</li>
+        <li>Sync game sessions across your devices</li>
+        <li>Enable social features (friends, pending plays, tournament notifications)</li>
+        <li>Display global game statistics and leaderboards</li>
+        <li>Improve our services based on aggregated, anonymized usage patterns</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Third-Party Integrations</h2>
+      <p>NexTurn integrates with BoardGameGeek (BGG) at your request. When you connect your BGG account and choose to log a play, session data (game name, date, player names, scores, location) is sent to BGG on your behalf. We do not store your BGG credentials &mdash; authentication is handled through secure OAuth-style sessions.</p>
+      <p>We do not sell, share, or provide your personal data to any other third-party services, vendors, or companies.</p>
+    </div>
+
+    <div class="section">
+      <h2>Data Storage &amp; Security</h2>
+      <p>Your data is stored securely using Amazon Web Services (AWS), including DynamoDB for session data and Cognito for authentication. All data is transmitted over encrypted connections (HTTPS/TLS).</p>
+      <p>NexTurn hardware devices do not collect, store, or transmit any personal data. They receive only lighting commands (color, pattern) via wireless connection.</p>
+    </div>
+
+    <div class="section">
+      <h2>Data Retention &amp; Deletion</h2>
+      <p>Your data is retained as long as your account is active. You may request deletion of your account and all associated data by contacting us at <a href="mailto:contact@nexturn.app" style="color: #01796F;">contact@nexturn.app</a>. Upon request, we will delete your data within 30 days, except where retention is required by law.</p>
+    </div>
+
+    <div class="section">
+      <h2>Children's Privacy</h2>
+      <p>NexTurn is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13. If you believe a child under 13 has provided us with personal information, please contact us at <a href="mailto:contact@nexturn.app" style="color: #01796F;">contact@nexturn.app</a> and we will promptly delete it.</p>
+    </div>
+
+    <div class="section">
+      <h2>Your Rights</h2>
+      <p>You have the right to:</p>
+      <ul>
+        <li>Access the personal data we hold about you</li>
+        <li>Request correction of inaccurate data</li>
+        <li>Request deletion of your account and data</li>
+        <li>Opt out of push notifications at any time through your device settings</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. Changes will be reflected in the "Last Updated" date above. Continued use of NexTurn after changes constitutes acceptance of the updated policy.</p>
+    </div>
+
+    <div class="section">
+      <h2>Contact Us</h2>
+      <p>If you have questions about this Privacy Policy or your data, please contact us at <a href="mailto:contact@nexturn.app" style="color: #01796F;">contact@nexturn.app</a>.</p>
+    </div>
+
+    <footer class="footer">
+      <a href="mailto:contact@nexturn.app">contact@nexturn.app</a>
+      <p>&copy; 2026 NexTurn. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
